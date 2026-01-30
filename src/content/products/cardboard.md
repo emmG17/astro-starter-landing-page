@@ -52,4 +52,4 @@ featuredProducts:
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDyACil2lEMyJW1RAFHd18jR71z62bdjKo4nQHW0QfvjtQCESB8hD6vaGpEdppzeqMxPO4sc-BRVVbmYKshu_OZqX6BbPS36--k0DjQHJFldMdvfDu4y5j_PdSqmDJmApF9MboMdMZBRmx1dQxw2KccV5Fj6HZtLwrkdFavxH1g-yLcDBA_UY00NHZfWMaWx7GbY_94Wx5QZFr3qiqwgmWUpM8C8tdwNB2ahpzFLtq0ZO0ozyNys8LqflF41SbHmr6DdSaK1N_DmR5k"
     badge: null
 ---
-Industrail cardboard packaging content body.
+Industrial cardboard packaging content body.
