@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us - Soluciones Industriales de Puebla" currentPage="about-us">
+  <!-- Hero Section -->
+  <section class="relative px-4 py-16 md:py-24 lg:px-40 bg-background-light dark:bg-background-dark overflow-hidden">
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="mx-auto flex flex-col max-w-[960px]">
+      <div class="@container">
+        <div class="flex flex-col gap-10 @[864px]:flex-row @[864px]:items-center">
+          <div class="flex flex-col gap-6 flex-1 @[864px]:max-w-[50%]">
+            <div class="flex flex-col gap-4 text-left">
+              <span class="inline-block w-fit bg-primary/20 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Since 2005</span>
+              <h1 class="text-text-main dark:text-white text-4xl font-black leading-tight tracking-tight sm:text-5xl">
+                Building the Foundation of Industrial Success
+              </h1>
+              <p class="text-neutral-600 dark:text-neutral-300 text-lg leading-relaxed">
+                For nearly two decades, Soluciones Industriales de Puebla has been a trusted partner in packaging, providing reliable, durable solutions tailored for the high demands of the industrial sector.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a href="/products" class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-text-main text-base font-bold leading-normal tracking-tight hover:brightness-105 transition-all shadow-lg shadow-primary/20">
+                View Product Catalog
+              </a>
+              <a href="/contact" class="flex items-center justify-center rounded-lg h-12 px-6 bg-transparent border border-neutral-300 dark:border-neutral-700 text-text-main dark:text-white text-base font-bold leading-normal hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all">
+                Contact Support
+              </a>
+            </div>
+          </div>
+          <div class="flex-1 w-full relative group">
+            <div class="absolute -inset-2 bg-primary/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-xl shadow-2xl overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA8YjWUbrF2GVgWgT1DInI4tILWE4jgVLzhgyBVN9pefN23k9b7V2g_GC6uOlmgaprboblwXoZGqIL8sw3j3XBSdAGHAzGJtAyf10ep8DrLGgidXetOJtZEaCgpu--Io1NRjpQrKvpe_x2fCjRL-49Ho_RkayEg5APLZvpvAO3s1bL87hFnky6HqeyQ0QEaQQpvCyNgskdCQbpBf5mkqwDwx050ZHgN36SpGh9kHvXWfSADQ6mYby3O-mj6ogUp0jR5ALEH_BCWJijb");'>
+              <div class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-6 left-6 text-white">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="material-symbols-outlined text-primary">verified</span>
+                  <span class="text-sm font-medium text-primary">Certified Quality</span>
+                </div>
+                <p class="font-bold text-lg">Puebla Distribution Center</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision Cards Section -->
+  <section class="py-20 px-4 lg:px-40 bg-[#eef3e7]/30 dark:bg-black/20">
+    <div class="mx-auto flex flex-col max-w-[960px]">
+      <div class="flex flex-col gap-4 mb-12 text-center max-w-[720px] mx-auto">
+        <h2 class="text-text-main dark:text-white text-3xl font-bold leading-tight tracking-tight">
+          Our Core Principles
+        </h2>
+        <p class="text-neutral-600 dark:text-neutral-400 text-base">We are dedicated to sustainable growth and unwavering commitment to our clients.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Mission Card -->
+        <div class="group flex flex-col gap-6 rounded-2xl border border-[#dce7cf] dark:border-neutral-800 bg-background-light dark:bg-neutral-900 p-8 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-500"></div>
+          <div class="size-14 rounded-xl bg-primary/20 flex items-center justify-center text-text-main z-10">
+            <span class="material-symbols-outlined text-3xl text-green-800 dark:text-primary">target</span>
+          </div>
+          <div class="flex flex-col gap-3 z-10">
+            <h3 class="text-text-main dark:text-white text-2xl font-bold leading-tight">Our Mission</h3>
+            <p class="text-neutral-600 dark:text-neutral-300 text-base leading-relaxed">
+              To provide durable, eco-efficient packaging solutions that protect our clients' products and streamline their logistics operations across the region. We aim to reduce waste while maximizing protection.
+            </p>
+          </div>
+        </div>
+        <!-- Vision Card -->
+        <div class="group flex flex-col gap-6 rounded-2xl border border-[#dce7cf] dark:border-neutral-800 bg-background-light dark:bg-neutral-900 p-8 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-500"></div>
+          <div class="size-14 rounded-xl bg-primary/20 flex items-center justify-center text-text-main z-10">
+            <span class="material-symbols-outlined text-3xl text-green-800 dark:text-primary">trending_up</span>
+          </div>
+          <div class="flex flex-col gap-3 z-10">
+            <h3 class="text-text-main dark:text-white text-2xl font-bold leading-tight">Our Vision</h3>
+            <p class="text-neutral-600 dark:text-neutral-300 text-base leading-relaxed">
+              To be the leading industrial supplier in Puebla, recognized for innovation, reliability, and sustainable growth. We envision a future where industrial efficiency meets environmental responsibility.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats/Trust Section -->
+  <section class="py-16 px-4 lg:px-40 bg-background-light dark:bg-background-dark border-y border-[#eef3e7] dark:border-neutral-800">
+    <div class="mx-auto max-w-[960px]">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="flex flex-col gap-1">
+          <div class="text-3xl md:text-4xl font-black text-text-main dark:text-white">18+</div>
+          <div class="text-sm font-medium text-neutral-500 dark:text-neutral-400">Years of Experience</div>
+        </div>
+        <div class="flex flex-col gap-1">
+          <div class="text-3xl md:text-4xl font-black text-text-main dark:text-white">500+</div>
+          <div class="text-sm font-medium text-neutral-500 dark:text-neutral-400">Clients Served</div>
+        </div>
+        <div class="flex flex-col gap-1">
+          <div class="text-3xl md:text-4xl font-black text-text-main dark:text-white">100%</div>
+          <div class="text-sm font-medium text-neutral-500 dark:text-neutral-400">Puebla Coverage</div>
+        </div>
+        <div class="flex flex-col gap-1">
+          <div class="text-3xl md:text-4xl font-black text-text-main dark:text-white">24/7</div>
+          <div class="text-sm font-medium text-neutral-500 dark:text-neutral-400">Support Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

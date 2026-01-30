@@ -1,0 +1,210 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home - Soluciones Industriales de Puebla" currentPage="home">
+  <!-- Hero Section -->
+  <section class="relative w-full py-16 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-[1280px] mx-auto">
+    <div class="@container">
+      <div class="flex flex-col-reverse gap-10 lg:flex-row lg:items-center lg:gap-16">
+        <!-- Text Content -->
+        <div class="flex flex-1 flex-col items-start gap-6 lg:gap-8">
+          <div class="space-y-4">
+            <div class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-green-800 dark:text-primary border border-primary/20">
+              <span class="size-2 rounded-full bg-primary animate-pulse"></span>
+              Premium Logistics Partners
+            </div>
+            <h1 class="text-4xl font-black leading-tight tracking-tight text-text-main dark:text-white sm:text-5xl lg:text-6xl">
+              Robust Packaging for <span class="text-transparent bg-clip-text bg-linear-to-r from-green-600 to-primary">Industrial Scale</span>
+            </h1>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed">
+              Secure your logistics with Puebla's premier provider of custom crates, pallets, and protective materials. Designed for durability and efficiency.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <a href="/products" class="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-8 text-base font-bold text-gray-900 shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-xl hover:-translate-y-0.5">
+              Explore Products
+            </a>
+            <a href="/contact" class="inline-flex h-12 items-center justify-center rounded-sm bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 px-8 text-base font-medium text-text-main dark:text-white transition-all hover:bg-gray-50 dark:hover:bg-surface-dark/80">
+              Contact Sales
+            </a>
+          </div>
+          <!-- Trust Indicator -->
+          <div class="pt-4 border-t border-gray-100 dark:border-gray-800 w-full">
+            <p class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-3">Trusted by industry leaders in Puebla</p>
+            <div class="flex gap-6 opacity-60 grayscale">
+              <div class="h-6 w-20 bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse"></div>
+              <div class="h-6 w-20 bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse"></div>
+              <div class="h-6 w-20 bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Image Content -->
+        <div class="flex-1 w-full lg:h-auto">
+          <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gray-100 dark:bg-gray-800 group">
+            <div class="absolute inset-0 bg-linear-to-tr from-black/20 to-transparent z-10"></div>
+            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6_3TbzDJDQiLwnLTZtBHj0HYINrh2o0b6ccRkC5n51lOMAvuXTmv51dnIjAq1sFwuZyYWCnjUWZfmrNh48v8Y83X_ZlAcxdmKdqmlPnXHUp9_TK6g5vQgdwIwhytLP8A9axzRYFFImE45ymF227MIUDPAHkzbhCsOnr2THGkRDlR_sdg0XtWIk9Ph3EKm_hUIY6Q64tRo0fEcq83G6F-xi0ShsUMVOmXuKuk2lm3Ck_fqGJOzsX9ZRU3GGAqCVMOMTzYeeNNFVQn-");'></div>
+            <!-- Floating Card Badge -->
+            <div class="absolute bottom-6 left-6 z-20 bg-white/95 dark:bg-surface-dark/95 backdrop-blur rounded-lg p-4 shadow-lg border border-gray-100 dark:border-gray-700 max-w-[200px] hidden sm:block">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="material-symbols-outlined text-primary">verified_user</span>
+                <span class="text-sm font-bold">Quality Assured</span>
+              </div>
+              <div class="h-1.5 w-full bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                <div class="h-full bg-primary w-[95%]"></div>
+              </div>
+              <p class="text-xs text-gray-500 mt-1 text-right">98% Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-white dark:bg-surface-dark border-y border-gray-100 dark:border-gray-800">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-10">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl font-bold tracking-tight text-text-main dark:text-white sm:text-4xl mb-4">
+            Why Choose Us?
+          </h2>
+          <p class="text-lg text-gray-600 dark:text-gray-300">
+            We provide reliable, sustainable, and custom packaging solutions engineered for your business needs.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <!-- Feature 1 -->
+          <div class="group relative flex flex-col gap-4 rounded-xl border border-gray-100 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 transition-all hover:shadow-lg hover:border-primary/50">
+            <div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-green-700 dark:text-primary group-hover:bg-primary group-hover:text-gray-900 transition-colors">
+              <span class="material-symbols-outlined text-[28px]">straighten</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-text-main dark:text-white mb-2">Custom Solutions</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Tailored crate sizes and pallet designs to fit your specific logistics requirements, minimizing waste and maximizing space.
+              </p>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="group relative flex flex-col gap-4 rounded-xl border border-gray-100 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 transition-all hover:shadow-lg hover:border-primary/50">
+            <div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-green-700 dark:text-primary group-hover:bg-primary group-hover:text-gray-900 transition-colors">
+              <span class="material-symbols-outlined text-[28px]">eco</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-text-main dark:text-white mb-2">Eco-friendly Materials</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Sustainable materials that reduce your carbon footprint without compromising strength or durability during transport.
+              </p>
+            </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="group relative flex flex-col gap-4 rounded-xl border border-gray-100 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 transition-all hover:shadow-lg hover:border-primary/50">
+            <div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-green-700 dark:text-primary group-hover:bg-primary group-hover:text-gray-900 transition-colors">
+              <span class="material-symbols-outlined text-[28px]">local_shipping</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-text-main dark:text-white mb-2">Fast Delivery</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Reliable shipping and logistics support to keep your supply chain moving efficiently across the region.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase Section -->
+  <section class="py-16 lg:py-24">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <span class="text-primary font-bold tracking-wider uppercase text-sm">Catalog</span>
+          <h2 class="text-3xl font-bold tracking-tight text-text-main dark:text-white sm:text-4xl mt-1">Our Top Solutions</h2>
+        </div>
+        <a class="group inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline underline-offset-4" href="/products">
+          View Full Catalog
+          <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+        </a>
+      </div>
+      <!-- Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="flex flex-col rounded-xl overflow-hidden bg-white dark:bg-surface-dark shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+          <div class="relative w-full aspect-[4/3] bg-gray-100">
+            <div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7crTowKjyuQug0JbTWsdZLDtVce935StfLz76pKzkVIbV5QtmLhNkaj3I96-v0N25Ve6DbBp9bQRXmwTxHL8g-TSKTyTMk4C69ydWdzjmWlk2_tkYsClblh9W2R8cZDc0W7R-hei3y-kzayerQqm6X5cH2vTtmYLp3q1og-6kTb344PXcnoqgxCE1pGXupXiTnwra_BpsswsoXgOOwaBtyYmoZcVGiBmdFt96NGFJmKvte5CngOZYt43OxaovUAvk7p8umh9SBOCl");'></div>
+            <div class="absolute top-3 right-3 bg-white dark:bg-background-dark px-2 py-1 rounded-sm text-xs font-bold shadow-sm">Best Seller</div>
+          </div>
+          <div class="p-5 flex flex-col flex-1 gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-text-main dark:text-white">Corrugated Boxes</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Durable, multi-wall boxes designed for safe transport of heavy industrial goods.</p>
+            </div>
+            <div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+              <span class="text-xs font-medium text-gray-400">Min. Order: 50 units</span>
+              <a href="/products/cardboard" class="rounded-lg bg-gray-100 dark:bg-gray-800 px-4 py-2 text-xs font-bold text-gray-900 dark:text-gray-100 hover:bg-primary hover:text-gray-900 transition-colors">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex flex-col rounded-xl overflow-hidden bg-white dark:bg-surface-dark shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+          <div class="relative w-full aspect-[4/3] bg-gray-100">
+            <div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAIermlivl2_DMSJYlvoSHeAMElUY9Ld72lnS-Kid8Z1yuK_ztLaiGU0jNaLPpmOCDFsNyANsRlSuczy5K85L5a-YUIoqI7-DZgiuHFwEQWKtM1VTrmX6l54nbyhpk1ZhXC-qWpTHZNnsMJzZpDBr0howqbGmx0bopuFpiDDyEI8vpJCBW12p0td7hIkkuVepBkBUPfdXwHf6krVUGeOVflK1cccdQUeuH6VmIEas1T2o9Qj1Nzw7tDRJA0KOjs9YpCc9NVAkunWzn");'></div>
+          </div>
+          <div class="p-5 flex flex-col flex-1 gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-text-main dark:text-white">Industrial Stretch Film</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">High-quality, puncture-resistant film for load stability and pallet security.</p>
+            </div>
+            <div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+              <span class="text-xs font-medium text-gray-400">Min. Order: 10 rolls</span>
+              <a href="/products/plastic-wrap" class="rounded-lg bg-gray-100 dark:bg-gray-800 px-4 py-2 text-xs font-bold text-gray-900 dark:text-gray-100 hover:bg-primary hover:text-gray-900 transition-colors">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="flex flex-col rounded-xl overflow-hidden bg-white dark:bg-surface-dark shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+          <div class="relative w-full aspect-[4/3] bg-gray-100">
+            <div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBt0hCcxtDB6pmwG3GTZnnkGEnwxRziU1uknBNjeglsUI3EDXh96bcsQuE6VpbP0aAH-4ecgTo60u7vcQfL-lEqTmmKCzuEJyhl567aeXQ5mEMpo86WBCFNZ6FrX7VW9RgFe0YHZmf64-tW2RZWzTc3Cw0X8o86j9sv7Q54t_8BdLEoUpKAw7Las-RBj_JCcTm0LWmSHqd3GiozIIMF9OHjdr4aL9LOY0bZwQmbFzdqos4yZYSDDAdZOEndz_Gx9wu2suLNBM02yAcM");'></div>
+          </div>
+          <div class="p-5 flex flex-col flex-1 gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-text-main dark:text-white">Custom Pallets</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Standard and custom-sized wooden and plastic pallets treated for export.</p>
+            </div>
+            <div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+              <span class="text-xs font-medium text-gray-400">Custom Dimensions</span>
+              <a href="/products/custom" class="rounded-lg bg-gray-100 dark:bg-gray-800 px-4 py-2 text-xs font-bold text-gray-900 dark:text-gray-100 hover:bg-primary hover:text-gray-900 transition-colors">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gray-900 text-white rounded-t-[2rem] mx-2 lg:mx-4 mb-4">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-6">Ready to optimize your supply chain?</h2>
+      <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+        Get a personalized quote for your business today. Our team is ready to help you find the perfect packaging solution.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="/contact" class="w-full sm:w-auto h-12 px-8 rounded-sm bg-primary text-gray-900 font-bold hover:bg-primary/90 transition-colors inline-flex items-center justify-center">
+          Request a Quote
+        </a>
+        <a href="tel:+522221234567" class="w-full sm:w-auto h-12 px-8 rounded-sm border border-gray-700 text-white font-medium hover:bg-gray-800 transition-colors inline-flex items-center justify-center">
+          Call Us: (222) 123-4567
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
