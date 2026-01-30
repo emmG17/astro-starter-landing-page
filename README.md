@@ -14,7 +14,8 @@ A robust, SEO-ready starter template for business landing pages, built with Astr
 -   **Design System**:
     -   Built with **Tailwind CSS 4**.
     -   Dark/Light mode support.
-    -   Custom font integration (Inter & Material Symbols).
+    -   Custom font integration (Inter).
+    -   **Icons**: Material Symbols via `astro-icon` (optimized SVGs).
 -   **Code Quality**:
     -   **ESLint**: Pre-configured with Astro and TypeScript support.
     -   **Husky & Lint-Staged**: Enforces code quality with pre-commit hooks.
@@ -25,6 +26,7 @@ A robust, SEO-ready starter template for business landing pages, built with Astr
 -   [Astro](https://astro.build/) - The web framework for content-driven websites.
 -   [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
 -   [Embla Carousel](https://www.embla-carousel.com/) - Lightweight carousel library.
+-   [astro-icon](https://www.astroicon.dev/) - Type-safe, optimized icon system.
 -   [Astro SEO](https://github.com/jonasmerlin/astro-seo) - Easy SEO configuration.
 -   [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager.
 
@@ -83,6 +85,13 @@ The output will be in the `dist/` directory, ready to be deployed to any static 
 
 -   **Linting**: Run `pnpm run lint` to check for code issues.
 -   **Pre-commit**: Husky is configured to automatically lint and fix staged files before committing.
+
+### Icons
+
+We use `astro-icon` with the `material-symbols` set. To add a new icon:
+1.  Search for the icon code on [Iconify](https://icon-sets.iconify.design/material-symbols/).
+2.  Use the `Icon` component: `<Icon name="material-symbols:icon-name" />`.
+    *   *Note: Replace underscores `_` in the icon name with hyphens `-`.*
 
 ## Project Structure
 

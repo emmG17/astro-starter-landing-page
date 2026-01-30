@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout title="Home - Soluciones Industriales de Puebla" currentPage="home">
@@ -47,7 +48,7 @@ import Layout from '../layouts/Layout.astro';
             <!-- Floating Card Badge -->
             <div class="absolute bottom-6 left-6 z-20 bg-white/95 dark:bg-surface-dark/95 backdrop-blur rounded-lg p-4 shadow-lg border border-gray-100 dark:border-gray-700 max-w-[200px] hidden sm:block">
               <div class="flex items-center gap-3 mb-2">
-                <span class="material-symbols-outlined text-primary">verified_user</span>
+                <Icon name="material-symbols:verified-user" class="text-primary" />
                 <span class="text-sm font-bold">Quality Assured</span>
               </div>
               <div class="h-1.5 w-full bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -77,7 +78,7 @@ import Layout from '../layouts/Layout.astro';
           <!-- Feature 1 -->
           <div class="group relative flex flex-col gap-4 rounded-xl border border-gray-100 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 transition-all hover:shadow-lg hover:border-primary/50">
             <div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-green-700 dark:text-primary group-hover:bg-primary group-hover:text-gray-900 transition-colors">
-              <span class="material-symbols-outlined text-[28px]">straighten</span>
+              <Icon name="material-symbols:straighten" class="text-[28px]" />
             </div>
             <div>
               <h3 class="text-lg font-bold text-text-main dark:text-white mb-2">Custom Solutions</h3>
@@ -89,7 +90,7 @@ import Layout from '../layouts/Layout.astro';
           <!-- Feature 2 -->
           <div class="group relative flex flex-col gap-4 rounded-xl border border-gray-100 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 transition-all hover:shadow-lg hover:border-primary/50">
             <div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-green-700 dark:text-primary group-hover:bg-primary group-hover:text-gray-900 transition-colors">
-              <span class="material-symbols-outlined text-[28px]">eco</span>
+              <Icon name="material-symbols:eco" class="text-[28px]" />
             </div>
             <div>
               <h3 class="text-lg font-bold text-text-main dark:text-white mb-2">Eco-friendly Materials</h3>
@@ -101,7 +102,7 @@ import Layout from '../layouts/Layout.astro';
           <!-- Feature 3 -->
           <div class="group relative flex flex-col gap-4 rounded-xl border border-gray-100 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 transition-all hover:shadow-lg hover:border-primary/50">
             <div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-green-700 dark:text-primary group-hover:bg-primary group-hover:text-gray-900 transition-colors">
-              <span class="material-symbols-outlined text-[28px]">local_shipping</span>
+              <Icon name="material-symbols:local-shipping" class="text-[28px]" />
             </div>
             <div>
               <h3 class="text-lg font-bold text-text-main dark:text-white mb-2">Fast Delivery</h3>
@@ -126,7 +127,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <a class="group inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline underline-offset-4" href="/products">
           View Full Catalog
-          <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+          <Icon name="material-symbols:arrow-forward" class="text-lg transition-transform group-hover:translate-x-1" />
         </a>
       </div>
       <!-- Grid -->

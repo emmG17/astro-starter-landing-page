@@ -17,7 +17,7 @@ featuredProducts:
         text: "Various Thicknesses"
       - icon: "shield"
         text: "Scratch Protection"
-      - icon: "cut"
+      - icon: "content_cut"
         text: "Easy to Cut"
     image: "/images/products/foam.jpg"
     badge: "Popular"

@@ -10,6 +10,8 @@ const navLinks = [
   { href: '/about', label: 'About Us' },
   { href: '/contact', label: 'Contact' },
 ];
+
+import { Icon } from 'astro-icon/components';
 ---
 
 <header class="sticky top-0 z-50 w-full border-b border-border-color bg-[#fafcf8]/80 backdrop-blur-md dark:bg-background-dark/80 dark:border-white/10">
@@ -17,7 +19,7 @@ const navLinks = [
     <div class="flex items-center gap-4 text-text-main dark:text-white">
       <a href="/" class="flex items-center gap-4">
         <div class="flex size-8 items-center justify-center rounded-sm bg-primary text-text-main">
-          <span class="material-symbols-outlined text-xl">package_2</span>
+          <Icon name="material-symbols:package-2" class="text-xl" />
         </div>
         <h2 class="hidden text-lg font-bold leading-tight tracking-tight sm:block">Soluciones Industriales</h2>
       </a>
@@ -46,7 +48,7 @@ const navLinks = [
       </a>
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" class="flex md:hidden size-10 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10">
-        <span class="material-symbols-outlined">menu</span>
+        <Icon name="material-symbols:menu" />
       </button>
     </div>
   </div>

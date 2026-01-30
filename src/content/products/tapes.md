@@ -17,7 +17,7 @@ featuredProducts:
         text: "Clear/Tan"
       - icon: "straighten"
         text: "48mm x 100m"
-      - icon: "glue"
+      - icon: "brush"
         text: "Acrylic Adhesive"
     image: "/images/products/tapes.jpg"
     badge: "Essential"

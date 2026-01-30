@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout title="About Us - Soluciones Industriales de Puebla" currentPage="about-us">
@@ -34,7 +35,7 @@ import Layout from '../layouts/Layout.astro';
               <div class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"></div>
               <div class="absolute bottom-6 left-6 text-white">
                 <div class="flex items-center gap-2 mb-1">
-                  <span class="material-symbols-outlined text-primary">verified</span>
+                  <Icon name="material-symbols:verified" class="text-primary" />
                   <span class="text-sm font-medium text-primary">Certified Quality</span>
                 </div>
                 <p class="font-bold text-lg">Puebla Distribution Center</p>
@@ -60,7 +61,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="group flex flex-col gap-6 rounded-2xl border border-[#dce7cf] dark:border-neutral-800 bg-background-light dark:bg-neutral-900 p-8 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 relative overflow-hidden">
           <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-500"></div>
           <div class="size-14 rounded-xl bg-primary/20 flex items-center justify-center text-text-main z-10">
-            <span class="material-symbols-outlined text-3xl text-green-800 dark:text-primary">target</span>
+            <Icon name="material-symbols:target" class="text-3xl text-green-800 dark:text-primary" />
           </div>
           <div class="flex flex-col gap-3 z-10">
             <h3 class="text-text-main dark:text-white text-2xl font-bold leading-tight">Our Mission</h3>
@@ -73,7 +74,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="group flex flex-col gap-6 rounded-2xl border border-[#dce7cf] dark:border-neutral-800 bg-background-light dark:bg-neutral-900 p-8 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 relative overflow-hidden">
           <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-500"></div>
           <div class="size-14 rounded-xl bg-primary/20 flex items-center justify-center text-text-main z-10">
-            <span class="material-symbols-outlined text-3xl text-green-800 dark:text-primary">trending_up</span>
+            <Icon name="material-symbols:trending-up" class="text-3xl text-green-800 dark:text-primary" />
           </div>
           <div class="flex flex-col gap-3 z-10">
             <h3 class="text-text-main dark:text-white text-2xl font-bold leading-tight">Our Vision</h3>

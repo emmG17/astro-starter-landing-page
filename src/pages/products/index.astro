@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
 
 import { getCollection } from 'astro:content';
 
@@ -35,11 +36,11 @@ const categories = products.sort((a, b) => {
               />
             ) : (
               <div class="absolute inset-0 bg-linear-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 flex items-center justify-center">
-                <span class="material-symbols-outlined text-6xl text-gray-400 group-hover:text-primary transition-colors">design_services</span>
+                <Icon name="material-symbols:design-services" class="text-6xl text-gray-400 group-hover:text-primary transition-colors" />
               </div>
             )}
             <div class="absolute right-4 top-4 flex size-10 items-center justify-center rounded-full bg-primary text-text-main shadow-md">
-              <span class="material-symbols-outlined">{category.data.icon}</span>
+              <Icon name={`material-symbols:${category.data.icon.replace(/_/g, '-')}`} />
             </div>
           </div>
           <div class="flex flex-1 flex-col p-6">
@@ -48,7 +49,7 @@ const categories = products.sort((a, b) => {
             <div class="mt-auto pt-4 border-t border-gray-100 dark:border-white/10">
               <a class="inline-flex items-center text-sm font-bold text-text-main hover:text-primary dark:text-white dark:hover:text-primary transition-colors" href={`/products/${category.id}`}>
                 {category.data.title === "Custom Solutions" ? "Start Project" : "View Products"}
-                <span class="material-symbols-outlined ml-1 text-lg">arrow_forward</span>
+                <Icon name="material-symbols:arrow-forward" class="ml-1 text-lg" />
               </a>
             </div>
           </div>
