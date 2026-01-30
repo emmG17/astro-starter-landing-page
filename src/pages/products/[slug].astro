@@ -1,0 +1,134 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  return products.map(product => ({
+    params: { slug: product.id },
+    props: { product },
+  }));
+}
+
+const { product } = Astro.props;
+const { data } = product;
+const featuredProducts = data.featuredProducts || [];
+---
+
+<Layout title={`${data.title} - Soluciones Industriales de Puebla`} currentPage="products">
+  <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+    <div class="flex flex-col w-full max-w-[1280px] flex-1">
+      <!-- Breadcrumbs -->
+      <div class="flex flex-wrap gap-2 px-4 py-2 mb-4">
+        <a class="text-text-muted hover:text-primary dark:text-primary/80 dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="/">Home</a>
+        <span class="text-text-muted dark:text-gray-500 text-sm font-medium leading-normal">/</span>
+        <a class="text-text-muted hover:text-primary dark:text-primary/80 dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="/products">Products</a>
+        <span class="text-text-muted dark:text-gray-500 text-sm font-medium leading-normal">/</span>
+        <span class="text-text-main dark:text-white text-sm font-medium leading-normal">{data.title}</span>
+      </div>
+
+      <!-- Page Heading & Intro -->
+      <div class="flex flex-col md:flex-row justify-between gap-8 p-4 mb-8 items-start">
+        <div class="flex flex-col gap-4 max-w-2xl">
+          <h1 class="text-text-main dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">
+            {data.title}
+          </h1>
+          <p class="text-text-muted dark:text-gray-300 text-lg font-normal leading-relaxed">
+            {data.longDescription || data.description}
+          </p>
+          <div class="flex gap-3 mt-2">
+            {data.tags.map((tag) => (
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-green-800 dark:text-green-200">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+        <!-- Stats -->
+        {data.stats && (
+          <div class="hidden md:flex flex-col items-end justify-center h-full min-w-[200px] text-right">
+            {data.stats.map((stat, index) => (
+              <>
+                <div class="text-4xl font-bold text-primary">{stat.value}</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">{stat.label}</div>
+                {index < data.stats!.length - 1 && <div class="h-8"></div>}
+              </>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <!-- Product Carousel Section -->
+      {featuredProducts.length > 0 && (
+        <div class="flex flex-col gap-6 p-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold text-text-main dark:text-white">Featured Products</h3>
+            <div class="flex gap-2">
+              <button class="p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors">
+                <span class="material-symbols-outlined">arrow_back</span>
+              </button>
+              <button class="p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carousel Container -->
+          <div class="flex overflow-x-auto pb-8 -mx-4 px-4 snap-x gap-6 scrollbar-hide">
+            {featuredProducts.map((product) => (
+              <div class="snap-start shrink-0 w-full sm:w-[320px] group">
+                <div class="flex h-full flex-col overflow-hidden rounded-xl bg-white dark:bg-[#252e1c] shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                  <div class="relative w-full aspect-[4/3] bg-gray-50 dark:bg-gray-800 overflow-hidden">
+                    <div
+                      class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105"
+                      style={`background-image: url("${product.image}");`}
+                    ></div>
+                    {product.badge && (
+                      <div class="absolute top-3 right-3 bg-white/90 dark:bg-black/60 backdrop-blur px-2 py-1 rounded-sm text-xs font-bold text-text-main dark:text-white">
+                        {product.badge}
+                      </div>
+                    )}
+                  </div>
+                  <div class="flex flex-col flex-1 p-5 gap-4">
+                    <div>
+                      <h4 class="text-text-main dark:text-white text-lg font-bold leading-tight mb-2">{product.title}</h4>
+                      <ul class="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                        {product.specs.map((spec) => (
+                          <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-[16px] text-primary">{spec.icon}</span> {spec.text}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="mt-auto pt-2">
+                      <a href="/contact" class="w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-[#1a2210] text-sm font-bold tracking-wide hover:bg-primary/90 transition-colors shadow-[0_2px_10px_rgba(142,237,33,0.2)]">
+                        Request Quote
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <!-- Scroll Progress Indicator -->
+          <div class="flex gap-2 justify-center mt-2">
+            <div class="w-8 h-1 bg-primary rounded-full"></div>
+            <div class="w-2 h-1 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
+            <div class="w-2 h-1 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
+          </div>
+        </div>
+      )}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
