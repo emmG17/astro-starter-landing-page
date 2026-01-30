@@ -1,46 +1,100 @@
-# Astro Starter Kit: Basics
+# Astro Business Landing Page Template
 
-```sh
-pnpm create astro@latest -- --template basics
+A robust, SEO-ready starter template for business landing pages, built with Astro and Tailwind CSS. Designed for high performance and easy customization.
+
+## Features
+
+-   **Dynamic Product Pages**: Built with Astro Content Collections for easy content management using Markdown.
+-   **SEO Optimized**: Integrated `astro-seo` for meta tags, Open Graph, and Twitter Cards.
+-   **Automatic Sitemap**: Generates a sitemap on build for search engine indexing.
+-   **Component Library**:
+    -   Responsive Navigation Bar.
+    -   **Embla Carousel**: Touch-enabled, performant product slider with progress indication.
+    -   Footer with social links.
+-   **Design System**:
+    -   Built with **Tailwind CSS 4**.
+    -   Dark/Light mode support.
+    -   Custom font integration (Inter & Material Symbols).
+-   **Code Quality**:
+    -   **ESLint**: Pre-configured with Astro and TypeScript support.
+    -   **Husky & Lint-Staged**: Enforces code quality with pre-commit hooks.
+    -   **TypeScript**: Fully typed for better developer experience.
+
+## Tech Stack
+
+-   [Astro](https://astro.build/) - The web framework for content-driven websites.
+-   [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
+-   [Embla Carousel](https://www.embla-carousel.com/) - Lightweight carousel library.
+-   [Astro SEO](https://github.com/jonasmerlin/astro-seo) - Easy SEO configuration.
+-   [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager.
+
+## Getting Started
+
+### Prerequisites
+
+-   Node.js v18.17.1 or higher.
+-   pnpm (recommended) or npm/yarn.
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/astro-business-template.git
+    cd astro-business-template
+    ```
+
+2.  Install dependencies:
+    ```bash
+    pnpm install
+    # This will also initialize Husky pre-commit hooks
+    ```
+
+3.  Environment Setup:
+    -   Copy the example environment file:
+        ```bash
+        cp .env.example .env
+        ```
+    -   Edit `.env` to set your site URL (required for sitemap generation):
+        ```env
+        SITE_URL=http://localhost:4321 # For local dev
+        ```
+
+### Development
+
+Start the development server:
+
+```bash
+pnpm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Visit `http://localhost:4321` to see your site.
 
-## 🚀 Project Structure
+### Building for Production
 
-Inside of your Astro project, you'll see the following folders and files:
+Build the static site:
+
+```bash
+pnpm run build
+```
+
+The output will be in the `dist/` directory, ready to be deployed to any static host (Netlify, Vercel, GitHub Pages, etc.).
+
+### Quality Assurance
+
+-   **Linting**: Run `pnpm run lint` to check for code issues.
+-   **Pre-commit**: Husky is configured to automatically lint and fix staged files before committing.
+
+## Project Structure
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── public/             # Static assets (images, fonts, favicon)
+├── src/
+│   ├── components/     # Reusable UI components (Header, Footer, Carousel)
+│   ├── content/        # Content Collections (Markdown product data)
+│   ├── layouts/        # Page layouts
+│   ├── pages/          # Application routes and pages
+│   └── styles/         # Global styles
+├── astro.config.mjs    # Astro configuration
+└── eslint.config.mjs   # Linting configuration
 ```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
